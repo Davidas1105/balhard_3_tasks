@@ -6,7 +6,7 @@
 
 Функция должна прибавлять к ней несколько дополнительных сумм:
     - налог (18%),
-    - регистрационный сбор (5%),
+    - регистрационный сбор (6%),
     - агентский сбор (500),
     - цену доставки (100)
 
@@ -29,8 +29,9 @@ def car_price(price: float) -> float:
 
     :return: Стоимость автомобиля с наценками
     """
-    result = None
-    return result
+    percent = 0.23 * price
+    car_price = price + percent + AGENCY_FEE + DELIVERY_PRICE
+    return car_price
 
 
 if __name__ == '__main__':

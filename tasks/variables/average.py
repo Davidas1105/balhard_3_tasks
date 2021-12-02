@@ -18,8 +18,8 @@ def calc_average(a: int, b: int, c: int) -> Union[int, float]:
 
     :return: среднее арифметическое, округленное до 5 знаков
     """
-    result = None
-    return result
+    calc_average = (int(b) + int(a) + int(c)) / 3
+    return round(calc_average, 5)
 
 
 if __name__ == '__main__':
